@@ -1,0 +1,15 @@
+resources:
+ - https://github.com/ldesrosi/gitops-components-library/components/bamoe/services/dependencies
+ - https://github.com/ldesrosi/gitops-components-library/components/bamoe/services/data-index
+ - https://github.com/ldesrosi/gitops-components-library/components/bamoe/services/management-console
+ - https://github.com/ldesrosi/gitops-components-library/components/bamoe/services/task-console
+
+configMapGenerator:
+  - name: bamoe-services-endpoints
+    namespace: bamoe-services
+    literals:
+      - KEYCLOAK_URL=router-default.bamoe-3cd0ec11030dfa215f262137faf739f1-0000.eu-gb.containers.appdomain.cloud
+      - DATA_INDEX_URL=router-default.bamoe-3cd0ec11030dfa215f262137faf739f1-0000.eu-gb.containers.appdomain.cloud
+
+generatorOptions:
+  disableNameSuffixHash: true
