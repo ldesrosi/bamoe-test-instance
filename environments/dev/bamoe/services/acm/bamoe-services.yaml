@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: data-index-app
+  name: bamoe-services-app
   namespace: openshift-gitops
 spec:
   project: app-bamoe-services
