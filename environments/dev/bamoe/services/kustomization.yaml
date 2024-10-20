@@ -1,5 +1,7 @@
-resources:
- - https://github.com/ldesrosi/gitops-components-library/components/bamoe/services/dependencies
+components:
+ - https://github.com/ldesrosi/gitops-components-library/components/bamoe/services/dependencies/kafka
+ - https://github.com/ldesrosi/gitops-components-library/components/bamoe/services/dependencies/postgresql
+ - https://github.com/ldesrosi/gitops-components-library/components/bamoe/services/dependencies/keycloak
  - https://github.com/ldesrosi/gitops-components-library/components/bamoe/services/data-index
  - https://github.com/ldesrosi/gitops-components-library/components/bamoe/services/management-console
  - https://github.com/ldesrosi/gitops-components-library/components/bamoe/services/task-console
