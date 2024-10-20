@@ -7,7 +7,7 @@ spec:
   project: app-bamoe-services
   destination:
     name: ''
-    namespace: app-bamoe-services
+    namespace: default
     server: https://kubernetes.default.svc
   sources:
     - repoURL: https://github.com/ldesrosi/bamoe-test-instance.git
