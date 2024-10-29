@@ -16,4 +16,4 @@ NAMESPACE=$USER
 docker stop bamoe-maven-repo &>/dev/null
 docker rm bamoe-maven-repo &>/dev/null
 
-docker run --name bamoe-maven-repo -d -p 31314:31314 quay.io/${NAMESPACE}/bamoe-maven-repository:9.1.0-ibm-0001 
+docker run --name bamoe-maven-repo --platform linux/amd64 -d -p 31314:31314 quay.io/${NAMESPACE}/bamoe-maven-repository:9.1.0-ibm-0001 
