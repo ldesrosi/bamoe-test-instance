@@ -7,7 +7,7 @@ components:
 secretGenerator:
   - name: oidc-app
     literals: 
-       - secret=11111
+       - secret=1SKVUxPQ9UaDZx6NzKSJgNb89tZODmTS
 
 namespace: app-bamoe-services
 
