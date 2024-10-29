@@ -1,0 +1,3 @@
+[submodule "build/kogito-examples"]
+	path = build/kogito-examples
+	url = https://github.com/ldesrosi/kogito-examples
