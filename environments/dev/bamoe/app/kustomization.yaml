@@ -1,0 +1,28 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+components:
+  - https://github.com/ldesrosi/gitops-components-library/components/bamoe/app
+
+secretGenerator:
+  - name: oidc-app
+    literals: 
+       - secret=11111
+
+namespace: app-bamoe-services
+
+commonLabels:
+  app: hiring-bamoe-app
+
+namePrefix: hiring-
+
+images:
+  - name: bamoe-app
+    newName: docker.io/ldesrosi/hiring-container
+    newTag: latest
+
+configurations:
+  - route-reference.yaml
+
+generatorOptions:
+  disableNameSuffixHash: true

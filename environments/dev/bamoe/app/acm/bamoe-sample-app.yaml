@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: bamoe-sample-app
+  namespace: openshift-gitops
+spec:
+  project: app-bamoe-sample
+  destination:
+    name: ''
+    namespace: app-bamoe-services
+    server: https://kubernetes.default.svc
+  sources:
+    - repoURL: https://github.com/ldesrosi/bamoe-test-instance.git
+      path: environments/dev/bamoe/app
+      targetRevision: HEAD

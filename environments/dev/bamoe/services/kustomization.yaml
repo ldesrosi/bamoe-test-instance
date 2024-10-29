@@ -12,6 +12,8 @@ configMapGenerator:
     literals:
       - KEYCLOAK_URL=https://cluster-keycloak-ingress-keycloak.bamoe-cluster-3cd0ec11030dfa215f262137faf739f1-0000.eu-gb.containers.appdomain.cloud/
       - DATA_INDEX_URL=https://data-index-route-app-bamoe-services.bamoe-3cd0ec11030dfa215f262137faf739f1-0000.eu-gb.containers.appdomain.cloud/graphql/
+      - MANAGEMENT_CONSOLE_URL=https://management-console-route-app-bamoe-services.bamoe-cluster-3cd0ec11030dfa215f262137faf739f1-0000.eu-gb.containers.appdomain.cloud/
+      - TASK_CONSOLE_URL=https://task-console-route-app-bamoe-services.bamoe-cluster-3cd0ec11030dfa215f262137faf739f1-0000.eu-gb.containers.appdomain.cloud/
 
 patches:
 - target:
