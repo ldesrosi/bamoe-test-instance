@@ -4,7 +4,7 @@ metadata:
   name: bamoe-sample-app
   namespace: openshift-gitops
 spec:
-  project: app-bamoe-sample
+  project: app-bamoe-services
   destination:
     name: ''
     namespace: app-bamoe-services
